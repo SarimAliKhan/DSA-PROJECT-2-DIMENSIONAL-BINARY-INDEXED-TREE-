@@ -73,11 +73,13 @@ class Matrix:
 
     def Main(self):
         mat = np.array([[15,5,7,4],[6,8,3,14],[4,20,7,1],[35,6,10,9]])
+        print("INPUT MATRIX")
+        print(mat)
         Bit = np.zeros((self.matSize+1,self.matSize+1),dtype=np.int32)
         Bit = self.BIT(mat,Bit)
         print("2-DIMENSIONAL BINARY INDEXED TREE")
         print(Bit)
-        coords = [self.Coord(1,1,1,3),self.Coord(2,1,2,2),self.Coord(3,2,3,2)]
+        coords = [self.Coord(1,1,2,3),self.Coord(2,1,2,3),self.Coord(1,2,3,2)]
         length_coords = len(coords)
         self.Answer(coords,length_coords,Bit)
         
