@@ -1,7 +1,7 @@
 import numpy as np
 class Matrix:
-    def __init__(self):
-        self.matSize = 4
+    def __init__(self,matSize):
+        self.matSize = matSize
 
     class Coord:
         def __init__(self,x1,y1,x2,y2):
@@ -86,5 +86,5 @@ class Matrix:
         
 
 
-c_Matrix = Matrix()
+c_Matrix = Matrix(4)
 c_Matrix.Main()
